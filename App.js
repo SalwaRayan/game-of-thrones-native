@@ -68,12 +68,12 @@ export default function App() {
       >
         <FlatList
           data={characters}
-          render={CharacterInfo}
+          renderItem={CharacterInfo}
           keyExtractor={(item) => item.id}
         />
       </Modal>
 
-      <FlatList data={characters} renderItem={Character} horizontal={true} />
+      <FlatList data={characters} render={Character} horizontal={true} />
     </ScrollView>
   );
 }
